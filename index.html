@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(236, 208, 187);
+        }
+        #firstheading{
+            /* background-color: green; */
+            color: red;
+            
+        }
+        .heading2{
+            color: rgb(19, 15, 231);
+        }
+
+        .last_para{
+            font-size: 20px;
+            color:teal;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+
+    let heading1=document.createElement("h1");
+    heading1.style.textAlign="center"
+    // heading1.style.color="blue"
+    // you can also style css using setAttribute 
+    heading1.setAttribute("id","firstheading")
+
+    let hr=document.createElement("hr");
+    let h2=document.createElement("h2")
+    h2.setAttribute("class","heading2")
+
+    let p1=document.createElement("p1")
+    let br=document.createElement("br")
+
+    let p2=document.createElement("p2")
+    let br2=document.createElement("br")
+    let p3=document.createElement("p3")
+    let br3=document.createElement("br")
+    let p4=document.createElement("p4")
+
+    heading1.innerText="Satyajeet Bharti";
+    h2.innerText="Education"
+    p1.innerText="10th-ABPS,Saraiya"
+    p2.innerText="Diploma-SBSSTC,Ferozpur,punjab"
+    p3.innerText="B.tech(CSE)-Pursuing from JIT,Jaipur"
+    p4.innerText="Software development-masai school"
+    document.querySelector("body").append(heading1,hr,h2,p1,br,p2,br2,p3,br,p4)
+
+    // skills
+    let h3=document.createElement("h3");
+    h3.innerText="skills"
+    document.querySelector("body").append(h3)
+    h3.style.fontSize="23px";
+    h3.style.color="blue";
+
+    // skill list 
+    let para1=document.createElement("p")
+    para1.innerText="Javscript";
+    let br4=document.createElement("br")
+
+    let para2=document.createElement("p")
+    para2.innerText="Css3"
+    let br5=document.createElement("br")
+
+    let para3=document.createElement("p")
+    para3.innerText="Git"
+    let br6= document.createElement("br")
+
+    let para4=document.createElement("p")
+    para4.innerText="Many more"
+
+    let last_para=document.createElement("p")
+    last_para.innerText="Thank you"
+    last_para.setAttribute("class","last_para")
+
+    document.querySelector("body").append(para1,br4,para2,br5,para3,br6,para4,last_para)
+
+    
+    
+    
+
+    
+
+</script>
